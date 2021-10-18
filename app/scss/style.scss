@@ -210,8 +210,8 @@
   &__text {
     font-weight: normal;
     font-size: 16px;
-    max-width: 530px;
-    margin: 0 auto 30px;
+    max-width: 730px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -284,6 +284,45 @@
     color: $primary;
   }
 }
+
+
+
+
+.decor {
+  padding: 170px 0 155px;
+  background: url(./../images/decor-bg.jpg) no-repeat;
+  background-size: cover;
+  min-height: 600px;
+
+  &__title {
+    max-width: 530px;
+    color: $secondary;
+    @extend %title-font;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      background: #6D7278;
+    }
+  }
+
+  &__text {
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+
 
 
 
