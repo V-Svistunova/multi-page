@@ -415,6 +415,57 @@
 
 
 
+.gallery {
+  padding: 80px 0 90px;
+
+  &__btns {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin: 0 13px;
+    padding: 6px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(#454647, .5);
+    color: #8F8D8D;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+  }
+
+  .mixitup-control-active {
+    background-color: rgba(#FFEF35, .5);
+    color: $secondary;
+    border: none;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);    
+    grid-gap: 30px 35px;
+  }
+
+  &__item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  &__img {
+    width: 100%;
+    object-fit: contain cover;
+    max-height: 1150px;
+    height: 100%;
+  }
+}
+
+
 
 
 
