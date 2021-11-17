@@ -41,6 +41,26 @@
     color: rgba(54, 56, 56, 0.9);
     line-height: 22px;
   }
+
+  &__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: rgba($secondary, .7);
+      border-radius: 1px;
+      -webkit-border-radius: 1px;
+      -moz-border-radius: 1px;
+      -ms-border-radius: 1px;
+      -o-border-radius: 1px;
+    }
+  }
 }
 
 
@@ -118,8 +138,28 @@
   }
 }
 
+.breadcrumbs {
+  background: rgba(#DFDFDF, .5);
+  padding: 13px 0 14px;
 
+  &__list {
+    display: flex;
+  }
 
+  &__item::after {
+    content: "/";
+    margin: 0 4px 0 -4px;
+  }
+
+  &__item:last-child::after {
+    display: none;
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $primary;
+  }
+}
 
 
 .top {
@@ -652,5 +692,76 @@
     color: #A1A1A1;
     text-align: center;
     padding: 42px 0 41px;
+  }
+}
+
+
+
+
+
+
+
+
+
+.about {
+  &__prev {
+    background-image: url(./../images/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    text-align: center;
+    padding: 160px 0;
+    margin-top: -53px;
+  }
+
+  &__prev-title {
+    @extend %title-font;
+    color: $secondary;
+    font-size: 60px;
+    line-height: 80px;
+  }
+
+  &__content {
+    padding: 130px 0 40px;
+  }
+
+  &__title {
+    @extend %title-font;
+    color: $secondary;
+    max-width: 822px;
+    font-size: 36px;
+    line-height: 60px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 1px;
+      background: #6D7278;
+    }
+  }
+
+  &__text {
+    padding-left: 284px;
+
+    p{
+      margin-bottom: 30px;
+    }
+  }
+
+  &__popup {
+    background-image: url(./../images/popup-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
