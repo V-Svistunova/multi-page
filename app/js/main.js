@@ -21,6 +21,13 @@ $(function () {
     slidesToScroll: 10,
   });
 
+  $('.article-slider__box').slick({    
+    prevArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-left"><img src="./images/arrow-slider-left.svg" alt="arrow for slider to left"></button>' ,
+    nextArrow: '<button type="button" class="article-slider__arrow article-slider__arrow-right"><img src="./images/arrow-slider-right.svg" alt="arrow for slider to right"></button>' ,
+  });
+
+  
+
   var mixer = mixitup('.gallery__inner' , {
     load: {
       filter: '.living'
