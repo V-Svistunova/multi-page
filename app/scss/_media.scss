@@ -31,6 +31,31 @@
 
 
 
+@media  (max-width: 1100px) {
+
+  .blog {
+    padding: 40px 0 42px;
+    &__inner {
+      flex-wrap: wrap-reverse;
+    }
+    &__items {
+      max-width: 100%;
+    }
+    &__item-img {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+  }
+
+  .aside {
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+}
+
+
+
 @media  (max-width: 992px) {
   
   .gallery {
@@ -434,6 +459,31 @@
     &-slider__text {
       font-size: 14px;
       line-height: 18px;
+    }
+  }
+
+  .aside {
+    &__title {
+      font-size: 16px;
+      line-height: 23px;
+    }
+  }
+
+  .blog {
+
+    &__item-title {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__blockquote,
+    &__blockquote-author {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    &__blockquote-author::before {
+      width: 100%;
     }
   }
 }
