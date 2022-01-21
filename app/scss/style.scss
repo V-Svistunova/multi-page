@@ -20,6 +20,9 @@
     padding: 0;
     cursor: pointer;
   }
+  &__btn-menu {
+    display: none;
+  }
 }
 
 .logo {
@@ -146,11 +149,17 @@
 
   &__list {
     display: flex;
+    overflow-x: auto;
+  }
+
+  &__item {
+    position: relative;
+    padding-right: 8px;
   }
 
   &__item::after {
+    position: absolute;
     content: "/";
-    margin: 0 4px 0 -4px;
   }
 
   &__item:last-child::after {
@@ -602,7 +611,8 @@
     display: flex;
   }
   &__form-input {
-    width: 368px;
+    width: 100%;
+    max-width: 368px;
     padding: 6px 10px 6px 18px;
     background-color: transparent;
     border: 1px solid rgba($secondary, .7);
@@ -1472,3 +1482,9 @@
     cursor: pointer;
   }
 }
+
+
+
+
+
+@import './media';
