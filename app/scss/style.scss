@@ -1260,7 +1260,8 @@
   }
 
   &__arrow-link--disabled {
-    display: none;
+    opacity: 0;
+    pointer-events: none;
   }
 
   &__list {
