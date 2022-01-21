@@ -12,6 +12,9 @@ $(function () {
     $('.menu').toggleClass('menu--open')
   });
 
+  if($(window).width() < 650) {
+    $('.works-path__item--measurements').appendTo($('.works-path__items-box'));
+  }
 
   $('.top__slider').slick({
     dots: true,
