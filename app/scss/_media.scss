@@ -485,6 +485,49 @@
     &__blockquote-author::before {
       width: 100%;
     }
+
+    .bloge-one {
+      &__links {
+        padding: 30px 0;
+        margin-bottom: 0;
+      }
+
+      &__link {
+        span {
+          display: none;
+        }
+      }
+
+      &__comments-item {
+        flex-wrap: wrap;
+      }
+
+      &__comments-info {
+        margin-top: -55px;
+      }
+
+      &__comments-name,
+      &__comments-date {
+        margin-left: 80px;
+      }
+
+      &__comments-name,
+      &__form-title {
+        font-size: 16px;
+        line-height: 26px;
+      }
+
+      &__comments-reply {
+        padding: 10px 0;
+        margin-left: 0;
+      }
+
+      &__form-input {
+        width: 100%;
+      }
+    }
+
+
   }
 }
 
@@ -534,5 +577,9 @@
     &-slider__text {
       max-width: 145px;
     }
+  }
+
+  .bloge-one__item blockquote {
+    padding: 0 20px;
   }
 }
