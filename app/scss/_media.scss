@@ -360,9 +360,15 @@
     &__items {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    &.gallery-page .gallery__item:nth-child(8) {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+
     &__item:first-child {
-        grid-column: span 1;
-        grid-row: span 1;
+      grid-column: span 1;
+      grid-row: span 1;
     }
   } 
 
