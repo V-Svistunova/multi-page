@@ -28,6 +28,36 @@ $(function () {
     arrows: false,
     slidesToShow: 10,
     slidesToScroll: 10,
+    responsive: [
+      {
+        breakpoint: 1700,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 8,
+        }
+      },
+      {
+        breakpoint: 1500,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 6,
+        }
+      },
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+    ]
   });
 
   $('.article-slider__box').slick({    
