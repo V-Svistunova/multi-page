@@ -1,0 +1,18 @@
+$primary: #5A5A5A;
+$secondary: #363838;
+$main-color: #000;
+$primary-light: #A1A1A1;
+
+%title-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
