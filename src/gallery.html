@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+  "title":"Галерея"
+})
+<body>
+  
+  @@include('html/header.html',{})
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery gallery-page">
+      <div class="container-fluid">
+        <div class="gallery__btns">
+          <button class="gallery__btn" data-filter=".bedroom" >Bedroom furniture</button>
+          <button class="gallery__btn" data-filter=".living" >Living room furniture</button>
+          <button class="gallery__btn" data-filter=".office" >Office furniture</button>
+          <button class="gallery__btn" data-filter=".dining" >Dining room futniture</button>
+          <button class="gallery__btn" data-filter=".chair" >Chair</button>
+        </div>
+        <div class="gallery__inner">
+
+          <div class="gallery__items mix bedroom" data-order="1">
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/1.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/2.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/3.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/4.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/5.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/8.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/7.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/6.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/9.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/10.jpg" alt="furniture">
+            </a>
+          </div>
+
+          <div class="gallery__items mix living" data-order="2">
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/6.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/7.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/8.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/9.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/10.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/3.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/2.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/1.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/4.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/5.jpg" alt="furniture">
+            </a>
+          </div>
+
+          <div class="gallery__items mix office" data-order="3">
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/15.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/11.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/12.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/13.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/14.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/3.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/2.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/6.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/4.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/5.jpg" alt="furniture">
+            </a>
+          </div>
+
+          <div class="gallery__items mix dining" data-order="4">
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/6.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/2.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/3.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/4.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/5.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/12.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/11.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/15.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/13.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/14.jpg" alt="furniture">
+            </a>
+          </div>
+
+          <div class="gallery__items mix chair" data-order="5">
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/1.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/2.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/3.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/4.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/5.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/15.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/11.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/6.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/13.jpg" alt="furniture">
+            </a>
+            <a class="gallery__item" href="#">
+              <img class="gallery__img" src="./images/gallery/14.jpg" alt="furniture">
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  @@include('html/footer.html',{})
+
+</body>
+</html>
