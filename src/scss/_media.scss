@@ -23,7 +23,7 @@
     }
 
     &__slider-img {
-      height: 640px;
+      height: 540px;
     }
   }
   
@@ -152,6 +152,10 @@
     &__btn {
       display: none;
     }
+  }
+
+  .rightside-menu {
+    display: none;
   }
 
   .menu {

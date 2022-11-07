@@ -8,6 +8,7 @@
 
 
 .header {
+  
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -38,6 +39,11 @@
   &__list-item {
   padding-right: 45px;
   padding-left: 35px;
+  transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
   &__list-link {
     @extend %title-font;
@@ -79,20 +85,16 @@
   max-width: 694px;
   background-color: white;
   z-index: 100;
-  transition: all 0.8;
-  -webkit-transition: all 0.8;
-  -moz-transition: all 0.8;
-  -ms-transition: all 0.8;
-  -o-transition: all 0.8;
+  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -ms-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
   padding-top: 40px;
   box-shadow: -2px 3px 17px 0px $secondary;
 
   &.rightside-menu--close {
-    transform: translateX(500%);
-    -webkit-transform: translateX(500%);
-    -moz-transform: translateX(500%);
-    -ms-transform: translateX(500%);
-    -o-transform: translateX(500%);
+    right: -110%;
   }
 
   &__close {
@@ -176,6 +178,7 @@
 .top {
   
   &__inner {
+    padding-top: 80px;
     padding-bottom: 70px;
     position: relative;
     &::after {
@@ -193,14 +196,17 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: initial;
   }
 
   &__slider-img {
-    max-width: 703px;
-    height: 815px;
+    max-width: 603px;
+    height: 715px;
     object-fit: contain;
-    margin-left: -10%;
   }
+
+
 
   &__slider-info {
     max-width: 645px;
@@ -377,7 +383,7 @@
 
 
 .works-path {
-  padding: 80px 0 30px;
+  padding: 80px 10px 30px;
 
   &__title {
     text-align: center;
@@ -552,6 +558,15 @@
   &__img-link {
     margin-bottom: 19px;
     display: inline-block;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__link {
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: #c8bb2a;
+    }
   }
 
   &__links {
@@ -644,6 +659,14 @@
     -moz-border-radius: 21px;
     -ms-border-radius: 21px;
     -o-border-radius: 21px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      background-color: rgba(255, 239, 53, 0.5);
+      color: #363838;
+      border: none;
+    }
+
   }
   &__social,
   &__menu {
@@ -658,6 +681,11 @@
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 14px;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
   }
   &__social-link,
   &__menu-link {
@@ -802,7 +830,6 @@
 
   &__img {
     margin-right: 78px;
-    margin-left: -230px;
   }
 
   &__content {
@@ -1201,6 +1228,11 @@
 
   &__link {
     color: inherit;
+    transition: all 0.3s ease 0s;
+
+    &:hover {
+      color: #c8bb2a;
+    }
   }
 
   &__search {
