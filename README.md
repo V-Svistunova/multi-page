@@ -1,3 +1,6 @@
+# [Deploy webpages: Furnoture](https://v-svistunova.github.io/multi-page/dist)
+
+
 # Как пользоваться сборкой
 
 Перед началом работы предварительно должны быть установлены Node.js, git
