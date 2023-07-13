@@ -1,0 +1,91 @@
+html,
+body {
+	height: 100%;
+}
+
+.body {	
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 27px;
+	color: $primary;
+	min-width: 300px;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 1920px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	li {
+		margin: 0 15px;
+	}
+
+	button {
+		background-color: $secondary;
+		border: none;
+		width: 8px;
+		height: 8px;
+		padding: 0;
+		font-size: 0;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-o-border-radius: 50%;
+	}
+	
+	li.slick-active {
+		button {
+			background-color: #FFEF35;
+		}
+	}
+}
+
+.info-email {
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	color: $secondary;
+	margin-bottom: 22px;
+	padding-left: 30px;
+	position: relative;
+	&::before {
+		position: absolute;
+		content: "";
+		width: 16px;
+		height: 12px;
+		background: url(./../images/envelope.svg) no-repeat center;
+		top: 8px;
+		left: 0;
+	}
+}
+

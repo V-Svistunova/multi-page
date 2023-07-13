@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html',{
+  "title":"Блог"
+})
+<body>
+  
+  @@include('html/header.html',{})
+
+  <main class="main">
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./index.html">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="./blog.html">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="blog">
+      <div class="container">
+        <div class="blog__inner">
+
+          <div class="blog__items">
+            <div class="blog__item">
+              <img class="blog__item-img" src="@img/blog/big-1.jpg" alt="images">
+              <div class="blog__item-info">
+                <span class="blog__item-date">August 15, 2020</span>  | 
+                <a class="blog__item-author blog-box__link" href="#">by Ann Summers</a> | 
+                <a class="blog__item-theme blog-box__link" href="#">Bedroom Furniture</a> 
+              </div>
+              <a class="blog__item-link" href="./blog-one.html">
+                <h4 class="blog__item-title blog-box__link">
+                  Red selfies edison bulb four dollar toast humblebrag for the furniture
+                </h4>
+              </a>                
+              <p class="blog__item-text">
+                Everyday carry actually neutra authentic kogi shabby chic migas small batch craft beer. 
+                Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Af man bun copper 
+                mug iPhone enamel pin pug selvage hammock palo santo godard thundercats coloring book yuccie 
+                woke. Ugh pok pok taxidermy pabst enamel pin edison bulb farm-to-table
+              </p>
+            </div>
+
+            <blockquote class="blog__blockquote">
+              “Simplicity is not the goal. It is the by-product of a good idea and modest expectations”
+              <div class="blog__blockquote-author">Paul Rand</div>
+            </blockquote>
+
+            <div class="blog__item article-popup">
+              <div class="article-popup__box">
+                <img class="blog__item-img" src="@img/blog/big-2.jpg" alt="images">
+                <a class="blog__item-popup" data-fancybox href="https://youtu.be/qxM1Zz0WZ9I">
+                  <img class="blog__popup-imgbtn" src="@img/play-button.svg" alt="play button">
+                </a>
+              </div>
+              <div class="blog__item-info">
+                <span class="blog__item-date">August 12, 2020</span>  | 
+                <a class="blog__item-author blog-box__link" href="#!">by Lux Morningstar</a> | 
+                <a class="blog__item-theme blog-box__link" href="#!">Design</a> 
+              </div>
+              <a class="blog__item-link" href="./blog-one.html">
+                <h4 class="blog__item-title blog-box__link">
+                  Authentic kogi shabby chic
+                </h4>
+              </a>
+            </div>
+
+            <div class="blog__item article-slider">
+              <div class="article-slider__box">
+                <img class="article-slider__img" src="@img/blog/big-3.jpg" alt="images">
+                <img class="article-slider__img" src="@img/blog/big-2.jpg" alt="images">
+                <img class="article-slider__img" src="@img/blog/big-1.jpg" alt="images">
+              </div> 
+              <div class="blog__item-info">
+                <span class="blog__item-date">August 18, 2020</span>  | 
+                <a class="blog__item-author blog-box__link" href="#">by Ann Summers</a> | 
+                <a class="blog__item-theme blog-box__link" href="#">Table Furniture</a> 
+              </div>
+              <a class="blog__item-link" href="./blog-one.html">
+                <h4 class="blog__item-title blog-box__link">
+                  Semiotics fixie four dollar toast, next level woke
+                </h4>
+              </a>                
+              <p class="blog__item-text">
+                Literally williamsburg tote bag farm-to-table mustache ugh deep v irony. Everyday carry actually neutra 
+                authentic kogi shabby chic migas small batch craft beer. Af man bun copper mug iPhone enamel pin pug 
+                selvage hammock palo santo godard thundercats coloring book yuccie woke. Ugh pok pok taxidermy pabst 
+                enamel pin edison bulb farm-to-table
+              </p>
+            </div>
+
+            <div class="pagination">
+              <a class="pagination__arrow-link pagination__arrow-link--disabled" href="#!">
+                <img class="pagination__arrow-img" src="@img/arrow-left.svg" alt="arrow">
+              </a>
+              <ul class="pagination__list">
+                <li class="pagination__item">
+                  <a class="pagination__num pagination__num--active" href="#!">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__num " href="#!">2</a>
+                </li>
+              </ul>
+              <a class="pagination__arrow-link" href="#!">
+                <img class="pagination__arrow-img" src="@img/arrow-right.svg" alt="arrow">
+              </a>
+            </div>
+
+          </div>
+
+          
+
+          <aside class="aside">
+            <form class="aside__search">
+              <input class="aside__search-input" type="text" placeholder="Search">
+              <button class="aside__search-btn" type="submit">
+                <img class="aside__search-img" src="@img/icon-search.svg" alt="icon search">
+              </button>
+            </form>
+            <div class="blog__category">
+              <h6 class="blog__category-title aside__title">Categories</h6>
+              <ul class="blog__category-list">
+                <li class="blog__category-item">
+                  <a class="blog__category-link aside__link" href="#">
+                    Dining room (1)
+                  </a>
+                </li>
+                <li class="blog__category-item">
+                  <a class="blog__category-link aside__link" href="#">
+                    Office furniture (12)
+                  </a>
+                </li>
+                <li class="blog__category-item">
+                  <a class="blog__category-link aside__link" href="#">
+                    Simple interiror design (2)
+                  </a>
+                </li>
+                <li class="blog__category-item">
+                  <a class="blog__category-link aside__link" href="#">
+                    Design (4)
+                  </a>
+                </li>
+                <li class="blog__category-item">
+                  <a class="blog__category-link aside__link" href="#">
+                    Bedroom Furniture (1)
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="recent-posts">
+              <h6 class="recent-posts__title aside__title">Recent Posts</h6>
+              <ul class="recent-posts__list">
+                <li class="recent-posts__item">
+                  <a class="recent-posts__item-title aside__link" href="./blog-one.html">
+                    Cred selfies edison bulb four dollar toast humblebrag
+                  </a>
+                  <span class="recent-posts__date">August 10, 2020</span> |
+                  <a class="recent-posts__author" href="#">by Ann Summers</a>
+                </li>
+                <li class="recent-posts__item">
+                  <a class="recent-posts__item-title aside__link" href="./blog-one.html">
+                    Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth
+                  </a>
+                  <span class="recent-posts__date">September 30 ,2020</span> |
+                  <a class="recent-posts__author" href="#">by Ann Summers</a>
+                </li>
+                <li class="recent-posts__item">
+                  <a class="recent-posts__item-title aside__link" href="./blog-one.html">
+                    Cred selfies edison bulb four dollar toast humblebrag
+                  </a>
+                  <span class="recent-posts__date">May 2, 2020</span> |
+                  <a class="recent-posts__author" href="#">by Ann Summers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="blog__tags">
+              <h6 class="blog__tags-title aside__title">Tags</h6>
+              <a class="blog__tags-link" href="#">Dining room futniture</a>
+              <a class="blog__tags-link" href="#">Chair</a>
+              <a class="blog__tags-link" href="#">Table</a>
+              <a class="blog__tags-link" href="#">Bedroom</a>
+              <a class="blog__tags-link" href="#">Office Furniture</a>
+              <a class="blog__tags-link blog__tags-link--active" href="#">Living room furniture</a>
+            </div>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="@img/facebook.svg" alt="icon facebook">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="@img/instagram.svg" alt="icon instagram">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="@img/pinterest.svg" alt="icon pinterest">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="@img/whatsapp.svg" alt="icon whatsapp">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img class="social__img" src="@img/youtube.svg" alt="icon youtube">
+                </a>
+              </li>
+            </ul>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  @@include('html/footer.html',{})
+
+</body>
+</html>
